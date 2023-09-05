@@ -1,0 +1,19 @@
+/*
+ * Copyright (c) 2023 Martin Kiepfer <mrmarteng@teleschirm.org>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+&m5stack_i2c0 {
+	status = "okay";
+
+	m5stack_mpu6886: m5stack_mpu6886 {
+		status = "okay";
+		compatible = "invensense,mpu6050";
+		reg = <0x68>;
+	};
+};
+
+/ {
+
+};
